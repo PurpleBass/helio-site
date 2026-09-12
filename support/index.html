@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Helio</title>
+<meta name="description" content="Support for Helio">
+<link rel="icon" href="../assets/icon.png">
+<style>
+  :root { --accent: #2563DC; --bg: #fbfbfd; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --line: #e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; --line: #38383a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+  header { border-bottom: 1px solid var(--line); background: var(--card); }
+  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--fg); text-decoration: none; }
+  .brand img { width: 32px; height: 32px; border-radius: 8px; }
+  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 22px; margin: 36px 0 8px; }
+  h3 { font-size: 18px; margin: 24px 0 4px; }
+  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  .button { display: inline-block; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer .bar { justify-content: space-between; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="../"><img src="../assets/icon.png" alt="">Helio</a>
+    <nav><a href="../privacy/">Privacy</a> <a href="../terms/">Terms</a> <a href="../support/" aria-current="page">Support</a> <a href="../es/support/" hreflang="es" lang="es">Español</a></nav>
+  </div>
+</header>
+<main>
+
+<h1>Support</h1>
+<p class="meta">We’re here to help with Helio.</p>
+<div class="summary"><strong>Contact us:</strong> <a href="mailto:support@harcode.com">support@harcode.com</a><br>We usually reply within 2 business days, in English or Spanish. Please include your device model, iOS version, and Helio version (shown in Settings).</div>
+<h2>Frequently asked questions</h2>
+<details><summary>My Bluetooth printer doesn’t show up.</summary><p>Make sure the printer is on, charged, and not connected to another device. Then check <em>Settings › Privacy &amp; Security › Bluetooth</em> and allow Helio. Helio supports ESC/POS-compatible thermal printers; AirPrint printers work through the print option on any receipt.</p></details>
+<details><summary>The assistant says it isn’t available.</summary><p>The assistant uses Apple Intelligence, which requires a compatible iPhone or iPad with Apple Intelligence turned on in <em>Settings › Apple Intelligence &amp; Siri</em>. After turning it on, the model may take some time to download. The rest of Helio works without it.</p></details>
+<details><summary>Where is my data? How do I back it up?</summary><p>Your store is a single <code>.helio</code> file on your device. To back it up or move it to another device, use the export/share option for your store and save the file to Files, iCloud Drive, AirDrop, or email. Keep regular backups — we cannot recover lost files.</p></details>
+<details><summary>I can’t open a store saved in iCloud Drive.</summary><p>Open the Files app and make sure the <code>.helio</code> file is fully downloaded (no cloud icon) before opening it in Helio. Helio works offline and cannot download it for you.</p></details>
+<details><summary>Are Helio receipts tax invoices?</summary><p>No. Receipts are sales tickets for your customers, not official tax invoices (such as a CFDI in Mexico). Use your tax provider’s invoicing service for fiscal invoices.</p></details>
+<details><summary>Does Helio process card payments?</summary><p>No. Helio records how each sale was paid (cash, card, transfer, and split payments), but charging cards is done with your own payment terminal.</p></details>
+<details><summary>How do I delete all my data?</summary><p>Delete your store file from Helio or the Files app, and delete any copies you exported. Deleting the app removes everything kept in its own folder. No data is held by us.</p></details>
+<h2>Requirements</h2>
+<ul>
+  <li>iPhone or iPad with iOS / iPadOS 26 or later</li>
+  <li>Assistant: a device that supports Apple Intelligence</li>
+  <li>Printing: an AirPrint printer or a Bluetooth ESC/POS thermal printer (optional)</li>
+</ul>
+<h2>More</h2>
+<p><a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use</a></p>
+
+</main>
+<footer>
+  <div class="bar">
+    <span>© 2026 Helio</span>
+    <span><a href="../privacy/">Privacy</a> <a href="../terms/">Terms</a> <a href="../support/" aria-current="page">Support</a> <a href="../es/support/" hreflang="es" lang="es">Español</a></span>
+  </div>
+</footer>
+</body>
+</html>
