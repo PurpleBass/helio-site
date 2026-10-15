@@ -46,13 +46,13 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective September 12, 2026</p>
-<div class="summary"><strong>In short:</strong> Helio does not collect, store, sell, or share any of your data. Everything you enter stays on your device, in files you control. Harcode has no servers that receive information from the app, and the app contains no analytics, advertising, or tracking.</div>
+<p class="meta">Effective October 15, 2026</p>
+<div class="summary"><strong>In short:</strong> Helio does not sell or share your data, and has no accounts, analytics, advertising, or tracking. Your store lives on your device, in files you control. The only time anything reaches Harcode’s servers is when you send a document to be signed, and that document travels encrypted with a key our servers never receive.</div>
 
 <p>This policy explains how Helio (the “App”), published by Harcode (“we”, “us”), handles information. It applies to the App on iPhone and iPad and to this website.</p>
 
 <h2>1. Information we collect</h2>
-<p>None. The App has no user accounts and does not send any information to Harcode or to any third party. We cannot see your products, sales, customers, or settings.</p>
+<p>The App has no user accounts and does not send your products, sales, customers, or settings to Harcode or to any third party. The one exception is a document you choose to send for signature (section 6): it passes through our service encrypted, and we cannot read it.</p>
 
 <h2>2. Information the App handles on your device</h2>
 <p>To work as a point of sale, the App stores the information you enter, such as products, prices, inventory, sales, refunds, payments recorded, cash-register sessions, and customer details (for example names, phone numbers, email and postal addresses, and notes). This information is saved:</p>
@@ -69,34 +69,44 @@
 <ul>
   <li><strong>Bluetooth</strong> — used only to find and print to thermal receipt printers you pair with.</li>
   <li><strong>Add to Photos</strong> — used only when you choose to save a receipt or order image to your photo library. The App cannot read your photos.</li>
+  <li><strong>Camera</strong> — used only while you scan a product barcode or the invitation code of a store you join. Images are not saved or sent anywhere.</li>
+  <li><strong>Local network</strong> — used only to link devices of the same store that are near each other (section 7).</li>
 </ul>
 <p>You can change these permissions at any time in iOS Settings. Declining them only disables the related feature.</p>
 
 <h2>5. Assistant (Apple Intelligence)</h2>
 <p>The App’s assistant uses Apple’s on-device language model. Your questions and store data are processed on your device and are not sent to Harcode. Availability depends on your device and Apple Intelligence settings. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a> for how Apple handles Apple Intelligence.</p>
 
-<h2>6. Sharing you initiate</h2>
+<h2>6. Documents sent for signature (Helio Firmas)</h2>
+<p>When you send a document to be signed, the App encrypts it on your device and uploads it to Harcode’s signing service at <code>firmas.harcode.com</code>, which runs on Cloudflare. The key is part of the link you share and never reaches our servers, so neither Harcode nor Cloudflare can read the document or what the signer writes or attaches.</p>
+<p>To give you a record of the signature, the service keeps, unencrypted, the times the link was created, opened, and signed, and the IP address it was signed from. Everything is deleted from the service as soon as the App collects the signature, when you cancel the link, and in any case 30 days after it was created. The signer’s side is described in the <a href="https://firmas.harcode.com/privacidad">Helio Firmas privacy notice</a>.</p>
+<p>The person signing is your customer: you are responsible for their information under the laws that apply to your business (section 3).</p>
+
+<h2>7. Linking devices of your store</h2>
+<p>If you invite someone to your store, their device connects directly to yours over the local network or Wi-Fi Aware. Store data travels between those two devices only, never through Harcode.</p>
+
+<h2>8. Sharing you initiate</h2>
 <p>Some actions hand information to another app or service only when you tap them: sharing or exporting a store file or receipt through the iOS share sheet, sending a receipt by email, printing with AirPrint, or opening a customer’s phone, address, or website in WhatsApp, Apple Maps, Google Maps, or your browser. Once shared, the information is governed by the recipient app’s or service’s privacy policy.</p>
 
-<h2>7. Tracking and advertising</h2>
+<h2>9. Tracking and advertising</h2>
 <p>The App does not track you across apps or websites, does not show ads, and contains no third-party analytics, advertising, or crash-reporting SDKs. This website uses no cookies, analytics, or external resources.</p>
 
-<h2>8. Security</h2>
-<p>Your data is protected by the security of your device. We recommend using a device passcode and keeping backups of your store file. The App verifies the integrity of store files when opening them.</p>
+<h2>10. Security</h2>
+<p>Your data is protected by the security of your device. Documents sent for signature are encrypted end to end with AES-256-GCM. We recommend using a device passcode and keeping backups of your store file. The App verifies the integrity of store files when opening them.</p>
 
-<h2>9. Retention and deletion</h2>
+<h2>11. Retention and deletion</h2>
 <p>Your data stays until you delete it. You can delete a store file from the App or the Files app; deleting the App removes the data kept in its own folder. Copies you exported or shared elsewhere must be deleted there.</p>
 
-<h2>10. Your rights</h2>
-<p>Because we do not hold personal data about you, there is nothing for us to access, correct, or delete on our side. You have full control of your data on your device. If you have any question or request, contact us and we will respond.</p>
+<h2>12. Your rights</h2>
+<p>We hold no personal data about you beyond the encrypted, temporary signing records in section 6, which are deleted automatically. You have full control of your data on your device. If you have any question or request, contact us and we will respond.</p>
 
-<h2>11. Children</h2>
+<h2>13. Children</h2>
 <p>The App is a business tool and is not directed to children under 13. We do not knowingly collect information from children.</p>
 
-<h2>12. Changes</h2>
+<h2>14. Changes</h2>
 <p>If this policy changes, we will update it on this page and change the effective date. Material changes will be noted in the App’s release notes.</p>
 
-<h2>13. Contact</h2>
+<h2>15. Contact</h2>
 <p>Harcode — <a href="mailto:support@harcode.com">support@harcode.com</a></p>
 
 </main>
