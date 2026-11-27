@@ -1,137 +1,199 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Helio</title>
-<meta name="description" content="Privacy Policy for Helio">
+<meta name="description" content="How Helio handles information: no accounts, no tracking, your store stays on your device.">
+<link rel="canonical" href="https://helio.harcode.com/privacy/">
+<link rel="alternate" hreflang="en" href="https://helio.harcode.com/privacy/">
+<link rel="alternate" hreflang="es" href="https://helio.harcode.com/es/privacy/">
+<meta name="theme-color" content="#F7F5F0">
 <link rel="icon" href="../assets/icon.png">
-<style>
-  :root { --accent: #2563DC; --bg: #fbfbfd; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --line: #e5e5ea; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #000; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; --line: #38383a; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
-  header { border-bottom: 1px solid var(--line); background: var(--card); }
-  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--fg); text-decoration: none; }
-  .brand img { width: 32px; height: 32px; border-radius: 8px; }
-  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
-  nav a { color: var(--muted); text-decoration: none; }
-  nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
-  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
-  h2 { font-size: 22px; margin: 36px 0 8px; }
-  h3 { font-size: 18px; margin: 24px 0 4px; }
-  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
-  .summary { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
-  a { color: var(--accent); }
-  ul { padding-left: 22px; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; margin: 10px 0; }
-  summary { cursor: pointer; font-weight: 600; }
-  .button { display: inline-block; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
-  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  footer .bar { justify-content: space-between; }
-  footer a { color: var(--muted); }
-</style>
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/landing.css">
+<link rel="stylesheet" href="../assets/legal.css">
 </head>
 <body>
-<header>
-  <div class="bar">
-    <a class="brand" href="../"><img src="../assets/icon.png" alt="">Helio</a>
-    <nav><a href="../privacy/" aria-current="page">Privacy</a> <a href="../terms/">Terms</a> <a href="../support/">Support</a> <a href="../es/privacy/" hreflang="es" lang="es">Español</a></nav>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 11h10.8l2-8H6.4"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 9v6M11 9v6M14 9v6M17 9v6"/></symbol>
+  <symbol id="i-split" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M12 6v12M6.5 10h2M15.5 14h2"/></symbol>
+  <symbol id="i-percent" viewBox="0 0 24 24"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="17" r="2.3"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H6a2 2 0 0 0 0 4h13.5A1.5 1.5 0 0 1 21 9.5v9a1.5 1.5 0 0 1-1.5 1.5H6a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="14" r="1.2"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.3"/><path d="M3 19.5c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6M17.5 14.7c1.9.6 3.1 2.2 3.5 4.8"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 14h7M8.5 18h4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9z"/><circle cx="8.5" cy="8.5" r="1.4"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v11M7.5 9.5L12 14l4.5-4.5M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.2h4.2"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-credit" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 7c0 4 4 5 10 5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20L20 4"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="9.5" r="1.8"/><path d="M21 16l-5-5-9 9"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="1"/><path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM18 14h2.5M14 18v2.5"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5V20h16V9.5M3 9.5L5 4h14l2 5.5c0 1.5-1.3 2.5-2.8 2.5S15.5 11 15.5 9.5c0 1.5-1.6 2.5-3.5 2.5s-3.5-1-3.5-2.5C8.5 11 7.3 12 5.8 12S3 11 3 9.5z"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M7.5 15l4-4.5 3 3L20 7"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="5.5" ry="2.5"/><path d="M3.5 7v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V7M3.5 11v4c0 1.4 2.5 2.5 5.5 2.5"/><ellipse cx="15.5" cy="15" rx="5" ry="2.3"/><path d="M10.5 15v3.5c0 1.3 2.2 2.3 5 2.3s5-1 5-2.3V15"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/></symbol>
+  <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M4 4l16 16M8.5 16.4a5 5 0 0 1 7 0M5.2 12.9a10 10 0 0 1 4.3-2.5M14.6 10.5a10 10 0 0 1 4.2 2.4M2 9.3a15 15 0 0 1 4.4-2.8M10.5 5.6A15 15 0 0 1 22 9.3"/><circle cx="12" cy="19.5" r=".6"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8c-1-3-5-4-5-1.5S12 8 12 8zM12 8c1-3 5-4 5-1.5S12 8 12 8z"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="17" rx="2.5"/><path d="M3 9a6 6 0 0 1 0 6M20.5 7.5a9 9 0 0 1 0 9"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M15 4.5l4.5 4.5L9 19.5H4.5V15z"/><path d="M3 21.5h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 18.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H8z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.5 1.6A3.8 3.8 0 0 1 17.5 18.5z"/></symbol>
+  <symbol id="i-invoice" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M2.5 11l4-4 3 1.5L12 7l5.5 1.5 4 2.5"/><path d="M6.5 7l-1 7 4 4 1.5-1 1.5 1.5 1.5-1 1.5 1 3.5-4.5-3-3.5-3 1.5-2-1.5"/></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><path d="M4 20.5h16V14a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 16c2 1.2 3.3 1.2 4.7 0 1.4 1.2 2.9 1.2 4.3 0 1.4 1.2 2.9 1.2 4.3 0 1.1.8 1.8.9 2.7.4M12 12V8.5M12 6.5c-.9-1 0-2.5 0-3.5.9 1 1 2.5 0 3.5z"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8.5 3.5L3.5 6.5l2 4 2-1v11h9v-11l2 1 2-4-5-3c0 1.7-1.6 3-3.5 3s-3.5-1.3-3.5-3z"/></symbol>
+  <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3.5h10v8H7zM5.5 11.5h13v3h-13zM7 14.5V21M17 14.5V21"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4.5 4.5 0 0 0 5.7 5.7L12 20.5a2.1 2.1 0 0 1-3-3l8.3-8.2a4.5 4.5 0 0 1-2.8-2.8zM15 4a4.5 4.5 0 0 1 5 5"/></symbol>
+  <symbol id="i-tent" viewBox="0 0 24 24"><path d="M12 3.5L2.5 20h19z"/><path d="M12 3.5L8 20M12 3.5l4 16.5M2.5 20h19"/></symbol>
+  <symbol id="balloon" viewBox="0 0 60 110"><path d="M30 4c14 0 25 11.5 25 27 0 17-13 31-25 33C18 62 5 48 5 31 5 15.5 16 4 30 4z" fill="#FFD447" stroke="#2563DC" stroke-width="3.5"/><path d="M15 22c2-6 6-9.5 11-10.5" stroke="#2563DC" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M26 64l4 5 4-5z" fill="#2563DC"/><path d="M30 69c-3 10 5 18 0 26s3 12 0 15" stroke="#2563DC" stroke-width="2.5" fill="none"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Helio</a>
+    <nav aria-label="Main">
+      <a href="../#features">Features</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <a class="lang" href="../es/privacy/" hreflang="es" lang="es">Español</a>
+    <a class="btn btn-primary" href="../#download">Try free</a>
   </div>
 </header>
-<main>
 
-<h1>Privacy Policy</h1>
-<p class="meta">Effective November 24, 2026</p>
-<div class="summary"><strong>In short:</strong> Helio does not sell or share your data, and has no accounts, analytics, advertising, or tracking. Your store lives on your device, in files you control. Harcode’s servers only see what is needed for three optional features: a document you send to be signed (encrypted with a key our servers never receive), card payments through Stripe, and new-order notifications. Card numbers never reach Harcode.</div>
+<main id="main" class="doc-wrap">
+  <article class="doc">
+    <p class="kicker">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective November 27, 2026</p>
 
-<p>This policy explains how Helio (the “App”), published by Harcode (“we”, “us”), handles information. It applies to the App on iPhone and iPad and to this website.</p>
+<div class="summary"><b>In short:</b> Helio does not sell or share your data, and has no accounts, analytics, advertising or tracking. Your store lives on your device, in files you control. Harcode's servers only see what is needed for optional features you choose to use — documents sent to be signed (encrypted with a key our servers never receive), card payments through Stripe, and new-order notifications. Card numbers never reach Harcode. Subscriptions are handled by Apple.</div>
 
-<h2>1. Information we collect</h2>
-<p>The App has no user accounts and does not send your products, sales, customers, or settings to Harcode or to any third party. The exceptions are optional features you choose to use: a document you send for signature (section 6), which passes through our service encrypted; card payments through Stripe (section 7); and new-order notifications (section 8).</p>
+<p>This policy (which also serves as our privacy notice under Mexico's Ley Federal de Protección de Datos Personales en Posesión de los Particulares) explains how Helio (the "App"), published by Harcode ("we", "us"), handles information. It applies to the App on iPhone, iPad and Mac, to its online services and to this website.</p>
 
-<h2>2. Information the App handles on your device</h2>
-<p>To work as a point of sale, the App stores the information you enter, such as products, prices, inventory, sales, refunds, payments recorded, cash-register sessions, and customer details (for example names, phone numbers, email and postal addresses, and notes). This information is saved:</p>
+<h2 id="controller">1. Who is responsible</h2>
+<p>Harcode is responsible for the personal data described in this policy. You can reach us at <a href="mailto:support@harcode.com">support@harcode.com</a> for any question or request about your data.</p>
+
+<h2 id="collect">2. Information we collect</h2>
+<p>The App has no user accounts and does not send your products, sales, customers or settings to Harcode or to any third party. The exceptions are optional features you choose to use:</p>
 <ul>
-  <li>in a <code>.helio</code> store file, in the App’s Documents folder or in a location you choose in the Files app; and</li>
-  <li>for App preferences (such as printer and receipt settings), in the App’s local settings on your device.</li>
+<li>a document you send for signature (section 8), which passes through our service encrypted;</li>
+<li>card payments through Stripe (section 9); and</li>
+<li>new-order notifications (section 10).</li>
 </ul>
-<p>If you choose to keep your store file in a cloud location such as iCloud Drive, that copy is handled by that provider under its own privacy policy (for iCloud, <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>).</p>
 
-<h2>3. Your customers’ information</h2>
-<p>If you record information about your own customers, you are responsible for it, including obtaining any consent and meeting the data-protection laws that apply to your business (in Mexico, the Ley Federal de Protección de Datos Personales en Posesión de los Particulares). Harcode does not receive or process that information.</p>
-
-<h2>4. Permissions</h2>
+<h2 id="device">3. Information the App handles on your device</h2>
+<p>To work as a point of sale, the App stores the information you enter, such as products, prices, inventory, sales, refunds, payments recorded, register sessions, orders, suppliers, expenses, coupons and loyalty records, and customer details (for example names, phone numbers, email and postal addresses, delivery locations and notes). This information is saved:</p>
 <ul>
-  <li><strong>Bluetooth</strong> — used only to find and print to thermal receipt printers you pair with.</li>
-  <li><strong>Add to Photos</strong> — used only when you choose to save a receipt or order image to your photo library. The App cannot read your photos.</li>
-  <li><strong>Camera</strong> — used only while you scan a product barcode or the invitation code of a store you join. Images are not saved or sent anywhere.</li>
-  <li><strong>Local network</strong> — used only to link devices of the same store that are near each other.</li>
-  <li><strong>Location</strong> — used only for Tap to Pay on iPhone, because Stripe requires the iPhone’s location to accept cards. Location is used while you take a payment and is not kept by Harcode.</li>
-  <li><strong>Notifications</strong> — used only to alert you of new orders and of a card payment that did not go through.</li>
+<li>in a <code>.helio</code> store file, in the App's Documents folder or in a location you choose in the Files app; and</li>
+<li>for App preferences (such as printer and receipt settings), in the App's local settings on your device.</li>
+</ul>
+<p>If you keep your store file in a cloud location such as iCloud Drive, that copy is handled by that provider under its own privacy policy (for iCloud, Apple's Privacy Policy).</p>
+
+<h2 id="purposes">4. Why we use information</h2>
+<p>The only purposes for which Harcode handles personal data are: providing the optional features you turn on (signing, card payments, notifications); confirming that a subscription is active; answering your support requests; and meeting legal obligations. We do not use your data for marketing, profiling or advertising, and we do not sell it.</p>
+
+<h2 id="customers">5. Your customers' information</h2>
+<p>If you record information about your own customers or employees, you are responsible for it, including giving them your own privacy notice, obtaining any consent and meeting the data-protection laws that apply to your business (in Mexico, the Ley Federal de Protección de Datos Personales en Posesión de los Particulares). Harcode does not receive or process that information, except encrypted signing documents and payment records as described below, which we handle on your behalf.</p>
+
+<h2 id="permissions">6. Permissions</h2>
+<ul>
+<li><b>Bluetooth</b> — only to find and print to thermal receipt printers you pair with.</li>
+<li><b>Add to Photos</b> — only when you choose to save a receipt or order image. The App cannot read your photos.</li>
+<li><b>Camera</b> — only while you scan a barcode, a loyalty card or the invitation code of a store you join. Images are not saved or sent anywhere.</li>
+<li><b>Local network</b> — only to link devices of the same store that are near each other.</li>
+<li><b>Location</b> — only for Tap to Pay on iPhone, because Stripe requires the iPhone's location to accept cards. It is used while you take a payment and is not kept by Harcode.</li>
+<li><b>Notifications</b> — only to alert you of new orders and of a card payment that did not go through.</li>
 </ul>
 <p>You can change these permissions at any time in iOS Settings. Declining them only disables the related feature.</p>
 
-<h2>5. Assistant (Apple Intelligence)</h2>
-<p>The App’s assistant uses Apple’s on-device language model. Your questions and store data are processed on your device and are not sent to Harcode. Availability depends on your device and Apple Intelligence settings. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a> for how Apple handles Apple Intelligence.</p>
+<h2 id="subscriptions">7. Subscriptions and purchases</h2>
+<p>Subscriptions are bought and billed by Apple. Harcode does not receive your name, Apple Account, card or billing details. The App checks on your device, through Apple's StoreKit, which plan is active.</p>
 
-<h2>6. Documents sent for signature (Helio Firmas)</h2>
-<p>When you send a document to be signed, the App encrypts it on your device and uploads it to Harcode’s signing service at <code>firmas.harcode.com</code>, which runs on Cloudflare. The key is part of the link you share and never reaches our servers, so neither Harcode nor Cloudflare can read the document or what the signer writes or attaches.</p>
-<p>To give you a record of the signature, the service keeps, unencrypted, the times the link was created, opened, and signed, and the IP address it was signed from. Everything is deleted from the service as soon as the App collects the signature, when you cancel the link, and in any case 30 days after it was created. The signer’s side is described in the <a href="https://firmas.harcode.com/privacidad">Helio Firmas privacy notice</a>.</p>
-<p>The person signing is your customer: you are responsible for their information under the laws that apply to your business (section 3).</p>
+<h2 id="signing">8. Documents sent for signature</h2>
+<p>When you send a document to be signed, the App encrypts it on your device and uploads it to Harcode's signing service, which runs on Cloudflare. The key is part of the link you share and never reaches our servers, so neither Harcode nor Cloudflare can read the document or what the signer writes or attaches.</p>
+<p>To give you a record of the signature, the service keeps, unencrypted, the times the link was created, opened and signed, and the IP address it was signed from. Everything is deleted from the service as soon as the App collects the signature, when you cancel the link, and in any case 30 days after it was created.</p>
 
-<h2>7. Card payments with Stripe (Tap to Pay on iPhone and payment links)</h2>
-<p>If you choose to accept cards, the App connects your store to Stripe, Inc., our payment processor, through Harcode’s payment service (which runs on Cloudflare). Stripe becomes the processor of those payments under the <a href="https://stripe.com/privacy">Stripe Privacy Policy</a>.</p>
+<h2 id="stripe">9. Card payments with Stripe</h2>
+<p>If you choose to accept cards, the App connects your store to Stripe, Inc., our payment processor, through Harcode's payment service (which runs on Cloudflare). Stripe processes those payments under the <a href="https://stripe.com/privacy" rel="noopener">Stripe Privacy Policy</a>.</p>
 <ul>
-  <li><strong>Setting up your account.</strong> We send Stripe the email address you enter and your store’s name and address to create your Stripe account. Identity and bank details (such as your CLABE) are entered directly on Stripe’s own pages; Harcode never receives them. Harcode keeps your Stripe account identifier so your payments go to your account.</li>
-  <li><strong>Taking a payment.</strong> With Tap to Pay on iPhone, the card is read by Apple and Stripe on your iPhone; the card number never reaches the App or Harcode. Our service sees the amount, the currency, the payment’s identifier and its result, which it needs to create and confirm the charge and Helio’s fee. Payment links work the same way: the customer pays on Stripe’s page.</li>
-  <li><strong>Location.</strong> Stripe requires the iPhone’s location to accept Tap to Pay payments, and collects it under its own policy.</li>
+<li><b>Setting up your account.</b> We send Stripe the email address you enter and your store's name and address to create your Stripe account. Identity and bank details (such as your CLABE) are entered directly on Stripe's pages; Harcode never receives them. Harcode keeps your Stripe account identifier so your payments go to your account.</li>
+<li><b>Taking a payment.</b> With Tap to Pay on iPhone, the card is read by Apple and Stripe on your iPhone; the card number never reaches the App or Harcode. Our service sees the amount, currency, the payment's identifier and its result, which it needs to create and confirm the charge and Helio's fee. Payment links work the same way: the customer pays on Stripe's page.</li>
 </ul>
-<p>Apple may collect information to provide Tap to Pay on iPhone, under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+<p>Apple may collect information to provide Tap to Pay on iPhone, under Apple's Privacy Policy.</p>
 
-<h2>8. New-order notifications</h2>
-<p>To alert you when a new order arrives, Harcode’s service keeps your device’s Apple push-notification token together with your store’s identifier. It is used only to send those alerts. You can stop the alerts at any time by turning notifications off for Helio in iOS Settings.</p>
+<h2 id="notifications">10. New-order notifications</h2>
+<p>To alert you when a new order arrives, Harcode's service keeps your device's Apple push-notification token together with your store's identifier, only to send those alerts. You can stop them at any time by turning notifications off for Helio in iOS Settings.</p>
 
-<h2>9. Usage on your device</h2>
-<p>The App counts which of its screens and actions you use, so you can see it in More › Usage. The count stays on your device and is never sent to Harcode; you can clear it or share it yourself.</p>
+<h2 id="assistant">11. Assistant</h2>
+<p>The App's assistant uses Apple's on-device language model. Your questions and store data are processed on your device and are not sent to Harcode. See Apple's Privacy Policy for how Apple handles Apple Intelligence.</p>
 
-<h2>10. Linking devices of your store</h2>
-<p>If you invite someone to your store, their device connects directly to yours over the local network or Wi-Fi Aware. Store data travels between those two devices only, never through Harcode.</p>
+<h2 id="team">12. Linking devices and usage on your device</h2>
+<p>If you invite someone to your store, their device connects directly to yours over the local network or Wi-Fi Aware; store data travels between those devices only, never through Harcode. The App also counts which screens you use so you can see it in More › Usage; that count stays on your device.</p>
 
-<h2>11. Sharing you initiate</h2>
-<p>Some actions hand information to another app or service only when you tap them: sharing or exporting a store file or receipt through the iOS share sheet, sending a receipt by email, printing with AirPrint, or opening a customer’s phone, address, or website in WhatsApp, Apple Maps, Google Maps, or your browser. Once shared, the information is governed by the recipient app’s or service’s privacy policy.</p>
+<h2 id="sharing">13. Sharing and transfers</h2>
+<p>We do not transfer your personal data to third parties, except to the providers that run the optional features above on our behalf (Cloudflare for hosting our services, Stripe for payments, Apple for notifications and purchases), and when required by law or a competent authority. These transfers do not require your consent under Mexican law. Actions you start yourself — sharing a store file or receipt, sending an email, printing, or opening a contact in WhatsApp or Maps — hand information to that app or service under its own policy.</p>
 
-<h2>12. Tracking and advertising</h2>
-<p>The App does not track you across apps or websites, does not show ads, and contains no third-party analytics, advertising, or crash-reporting SDKs. The only third-party SDK is Stripe’s, used solely to take card payments. This website uses no cookies, analytics, or external resources.</p>
+<h2 id="tracking">14. Tracking, advertising and this website</h2>
+<p>The App does not track you across apps or websites, does not show ads, and contains no third-party analytics, advertising or crash-reporting SDKs. The only third-party SDK is Stripe's, used solely to take card payments. This website sets no cookies and uses no analytics or advertising. It is hosted on GitHub Pages, which may record technical data such as your IP address for security, under GitHub's privacy statement.</p>
 
-<h2>13. Security</h2>
-<p>Your data is protected by the security of your device. Documents sent for signature are encrypted end to end with AES-256-GCM. We recommend using a device passcode and keeping backups of your store file. The App verifies the integrity of store files when opening them.</p>
+<h2 id="security">15. Security and retention</h2>
+<p>Your data is protected by the security of your device; we recommend a device passcode and regular backups. Documents sent for signature are encrypted end to end with AES-256-GCM. Your data stays until you delete it: delete a store file from the App or the Files app, and deleting the App removes the data in its own folder. We keep Stripe identifiers and payment records only while you use card payments and as long as the law requires.</p>
 
-<h2>14. Retention and deletion</h2>
-<p>Your data stays until you delete it. You can delete a store file from the App or the Files app; deleting the App removes the data kept in its own folder. Copies you exported or shared elsewhere must be deleted there.</p>
+<h2 id="rights">16. Your rights (ARCO)</h2>
+<p>You may access, rectify or cancel your personal data held by Harcode, oppose its use, revoke your consent or limit its use or disclosure. Send your request to <a href="mailto:support@harcode.com">support@harcode.com</a> with your name, the right you want to exercise, and enough information to locate the data (for example your store's identifier or the payment involved). We will answer within 20 business days, and if your request is granted we will act on it within the following 15 business days. If you believe your rights were not respected, you may go to Mexico's data-protection authority.</p>
 
-<h2>15. Your rights</h2>
-<p>We hold no personal data about you beyond the encrypted, temporary signing records in section 6, which are deleted automatically, and, if you use them, the Stripe account identifier, payment records and notification token described in sections 7 and 8. You have full control of your data on your device. If you have any question or request, contact us and we will respond.</p>
-
-<h2>16. Children</h2>
+<h2 id="children">17. Children</h2>
 <p>The App is a business tool and is not directed to children under 13. We do not knowingly collect information from children.</p>
 
-<h2>17. Changes</h2>
-<p>If this policy changes, we will update it on this page and change the effective date. Material changes will be noted in the App’s release notes.</p>
+<h2 id="changes">18. Changes</h2>
+<p>If this policy changes, we will update it on this page and change the effective date. Material changes will also be noted in the App's release notes.</p>
 
-<h2>18. Contact</h2>
+<h2 id="contact">19. Contact</h2>
 <p>Harcode — <a href="mailto:support@harcode.com">support@harcode.com</a></p>
 
+  </article>
 </main>
-<footer>
-  <div class="bar">
-    <span>© 2026 Helio</span>
-    <span><a href="../privacy/" aria-current="page">Privacy</a> <a href="../terms/">Terms</a> <a href="../support/">Support</a> <a href="../es/privacy/" hreflang="es" lang="es">Español</a></span>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Harcode · Helio</span>
+    <nav aria-label="Footer">
+      <a href="../privacy/" aria-current="page">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a href="../support/">Support</a>
+      <a href="../es/privacy/" hreflang="es" lang="es">Español</a>
+    </nav>
   </div>
 </footer>
+<script src="../assets/landing.js"></script>
 </body>
 </html>

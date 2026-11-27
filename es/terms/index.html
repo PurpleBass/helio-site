@@ -1,95 +1,192 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Términos de Uso · Helio</title>
-<meta name="description" content="Términos de Uso for Helio">
+<meta name="description" content="Los términos que regulan Helio, sus suscripciones y funciones en línea.">
+<link rel="canonical" href="https://helio.harcode.com/es/terms/">
+<link rel="alternate" hreflang="es" href="https://helio.harcode.com/es/terms/">
+<link rel="alternate" hreflang="en" href="https://helio.harcode.com/terms/">
+<meta name="theme-color" content="#F7F5F0">
 <link rel="icon" href="../../assets/icon.png">
-<style>
-  :root { --accent: #2563DC; --bg: #fbfbfd; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --line: #e5e5ea; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #000; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; --line: #38383a; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
-  header { border-bottom: 1px solid var(--line); background: var(--card); }
-  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--fg); text-decoration: none; }
-  .brand img { width: 32px; height: 32px; border-radius: 8px; }
-  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
-  nav a { color: var(--muted); text-decoration: none; }
-  nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
-  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
-  h2 { font-size: 22px; margin: 36px 0 8px; }
-  h3 { font-size: 18px; margin: 24px 0 4px; }
-  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
-  .summary { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
-  a { color: var(--accent); }
-  ul { padding-left: 22px; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; margin: 10px 0; }
-  summary { cursor: pointer; font-weight: 600; }
-  .button { display: inline-block; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
-  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  footer .bar { justify-content: space-between; }
-  footer a { color: var(--muted); }
-</style>
+<link rel="apple-touch-icon" href="../../assets/icon.png">
+<link rel="stylesheet" href="../../assets/landing.css">
+<link rel="stylesheet" href="../../assets/legal.css">
 </head>
 <body>
-<header>
-  <div class="bar">
-    <a class="brand" href="../../es/"><img src="../../assets/icon.png" alt="">Helio</a>
-    <nav><a href="../../es/privacy/">Privacidad</a> <a href="../../es/terms/" aria-current="page">Términos</a> <a href="../../es/support/">Soporte</a> <a href="../../terms/" hreflang="en" lang="en">English</a></nav>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 11h10.8l2-8H6.4"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 9v6M11 9v6M14 9v6M17 9v6"/></symbol>
+  <symbol id="i-split" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M12 6v12M6.5 10h2M15.5 14h2"/></symbol>
+  <symbol id="i-percent" viewBox="0 0 24 24"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="17" r="2.3"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H6a2 2 0 0 0 0 4h13.5A1.5 1.5 0 0 1 21 9.5v9a1.5 1.5 0 0 1-1.5 1.5H6a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="14" r="1.2"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.3"/><path d="M3 19.5c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6M17.5 14.7c1.9.6 3.1 2.2 3.5 4.8"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 14h7M8.5 18h4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9z"/><circle cx="8.5" cy="8.5" r="1.4"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v11M7.5 9.5L12 14l4.5-4.5M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.2h4.2"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-credit" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 7c0 4 4 5 10 5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20L20 4"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="9.5" r="1.8"/><path d="M21 16l-5-5-9 9"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="1"/><path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM18 14h2.5M14 18v2.5"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5V20h16V9.5M3 9.5L5 4h14l2 5.5c0 1.5-1.3 2.5-2.8 2.5S15.5 11 15.5 9.5c0 1.5-1.6 2.5-3.5 2.5s-3.5-1-3.5-2.5C8.5 11 7.3 12 5.8 12S3 11 3 9.5z"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M7.5 15l4-4.5 3 3L20 7"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="5.5" ry="2.5"/><path d="M3.5 7v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V7M3.5 11v4c0 1.4 2.5 2.5 5.5 2.5"/><ellipse cx="15.5" cy="15" rx="5" ry="2.3"/><path d="M10.5 15v3.5c0 1.3 2.2 2.3 5 2.3s5-1 5-2.3V15"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/></symbol>
+  <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M4 4l16 16M8.5 16.4a5 5 0 0 1 7 0M5.2 12.9a10 10 0 0 1 4.3-2.5M14.6 10.5a10 10 0 0 1 4.2 2.4M2 9.3a15 15 0 0 1 4.4-2.8M10.5 5.6A15 15 0 0 1 22 9.3"/><circle cx="12" cy="19.5" r=".6"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8c-1-3-5-4-5-1.5S12 8 12 8zM12 8c1-3 5-4 5-1.5S12 8 12 8z"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="17" rx="2.5"/><path d="M3 9a6 6 0 0 1 0 6M20.5 7.5a9 9 0 0 1 0 9"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M15 4.5l4.5 4.5L9 19.5H4.5V15z"/><path d="M3 21.5h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 18.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H8z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.5 1.6A3.8 3.8 0 0 1 17.5 18.5z"/></symbol>
+  <symbol id="i-invoice" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M2.5 11l4-4 3 1.5L12 7l5.5 1.5 4 2.5"/><path d="M6.5 7l-1 7 4 4 1.5-1 1.5 1.5 1.5-1 1.5 1 3.5-4.5-3-3.5-3 1.5-2-1.5"/></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><path d="M4 20.5h16V14a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 16c2 1.2 3.3 1.2 4.7 0 1.4 1.2 2.9 1.2 4.3 0 1.4 1.2 2.9 1.2 4.3 0 1.1.8 1.8.9 2.7.4M12 12V8.5M12 6.5c-.9-1 0-2.5 0-3.5.9 1 1 2.5 0 3.5z"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8.5 3.5L3.5 6.5l2 4 2-1v11h9v-11l2 1 2-4-5-3c0 1.7-1.6 3-3.5 3s-3.5-1.3-3.5-3z"/></symbol>
+  <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3.5h10v8H7zM5.5 11.5h13v3h-13zM7 14.5V21M17 14.5V21"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4.5 4.5 0 0 0 5.7 5.7L12 20.5a2.1 2.1 0 0 1-3-3l8.3-8.2a4.5 4.5 0 0 1-2.8-2.8zM15 4a4.5 4.5 0 0 1 5 5"/></symbol>
+  <symbol id="i-tent" viewBox="0 0 24 24"><path d="M12 3.5L2.5 20h19z"/><path d="M12 3.5L8 20M12 3.5l4 16.5M2.5 20h19"/></symbol>
+  <symbol id="balloon" viewBox="0 0 60 110"><path d="M30 4c14 0 25 11.5 25 27 0 17-13 31-25 33C18 62 5 48 5 31 5 15.5 16 4 30 4z" fill="#FFD447" stroke="#2563DC" stroke-width="3.5"/><path d="M15 22c2-6 6-9.5 11-10.5" stroke="#2563DC" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M26 64l4 5 4-5z" fill="#2563DC"/><path d="M30 69c-3 10 5 18 0 26s3 12 0 15" stroke="#2563DC" stroke-width="2.5" fill="none"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../es/"><img src="../../assets/icon.png" alt="" width="36" height="36">Helio</a>
+    <nav aria-label="Principal">
+      <a href="../../es/#funciones">Funciones</a>
+      <a href="../../es/#planes">Planes</a>
+      <a href="../../es/#preguntas">Preguntas</a>
+    </nav>
+    <a class="lang" href="../../terms/" hreflang="en" lang="en">English</a>
+    <a class="btn btn-primary" href="../../es/#descargar">Prueba gratis</a>
   </div>
 </header>
-<main>
 
-<h1>Términos de Uso</h1>
-<p class="meta">Vigente desde el 12 de septiembre de 2026</p>
-<p>Estos Términos rigen el uso de Helio (la “App”), publicada por Harcode (“nosotros”). Al descargar o usar la App aceptas estos Términos. Si no estás de acuerdo, no uses la App.</p>
+<main id="main" class="doc-wrap">
+  <article class="doc">
+    <p class="kicker">Legal</p>
+    <h1>Términos de Uso</h1>
+    <p class="meta">Vigente desde 27 de noviembre de 2026</p>
 
-<h2>1. Licencia</h2>
-<p>Te otorgamos una licencia personal, no exclusiva, intransferible y revocable para usar la App en dispositivos Apple de tu propiedad o bajo tu control, conforme a las Reglas de Uso de los Términos del App Store. Estos Términos complementan el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de Licencia de Usuario Final estándar de Apple</a>; en caso de conflicto, prevalecen estos Términos en la medida permitida.</p>
+<div class="summary"><b>En resumen:</b> Helio es un punto de venta que usas en tus propios dispositivos Apple. Los datos de tu tienda son tuyos y se quedan en tu dispositivo. Para vender en tus tiendas necesitas una suscripción Lift, Float o Fly, que se compra y se administra en el App Store y se renueva automáticamente hasta que la canceles. Si dejas de pagar, puedes seguir abriendo y exportando todo. Los tickets no son comprobantes fiscales.</div>
 
-<h2>2. Tus datos y contenido</h2>
-<p>La información que capturas en la App es tuya. Se guarda en tu dispositivo y en archivos que tú controlas; nosotros no tenemos acceso. Eres responsable de respaldar tus archivos de tienda y de la exactitud y uso lícito de los datos que registras, incluida la información de tus clientes. Consulta nuestro <a href="../../es/privacy/">Aviso de Privacidad</a>.</p>
+<p>Estos Términos de Uso (los "Términos") regulan el uso de la app Helio (la "App"), sus servicios en línea y este sitio web, publicados por Harcode ("Harcode", "nosotros"). Al descargar o usar la App aceptas estos Términos y nuestro <a href="../privacy/">Aviso de Privacidad</a>. Si no estás de acuerdo, no uses la App.</p>
 
-<h2>3. Uso aceptable</h2>
-<p>Te comprometes a no usar la App en violación de la ley, a no infringir derechos de terceros y a no descompilar, modificar ni redistribuir la App salvo lo permitido por la ley.</p>
+<h2 id="licencia">1. Licencia</h2>
+<p>Te otorgamos una licencia personal, no exclusiva, intransferible y revocable para usar la App en dispositivos Apple que sean tuyos o que controles, según las Reglas de Uso de los Términos de Servicio del App Store. Estos Términos complementan el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Contrato de Licencia de Usuario Final de Aplicaciones con Licencia</a> de Apple (el "EULA Estándar"); si se contradicen, prevalecen estos Términos en la medida que lo permita la ley.</p>
 
-<h2>4. Limitaciones importantes</h2>
+<h2 id="planes">2. Planes y suscripciones</h2>
+<p>Abrir, consultar y exportar tiendas siempre es gratis. Para vender en una tienda propia necesitas una de estas suscripciones de renovación automática, que se venden en el App Store de Apple:</p>
+<table>
+<thead><tr><th>Plan</th><th>Mensual</th><th>Anual</th></tr></thead>
+<tbody>
+<tr><td><b>Lift</b> — venta, catálogo, clientes, proveedores, historial de ventas, ticket digital</td><td>$49 MXN</td><td>$490 MXN</td></tr>
+<tr><td><b>Float</b> — Lift más pedidos guardados, tus métodos de pago, equipo, impresora térmica, tickets sin marca, asistente en el dispositivo</td><td>$149 MXN</td><td>$1,490 MXN</td></tr>
+<tr><td><b>Fly</b> — Float más inventario, análisis, crédito a clientes, cupones y lealtad, mapas y entregas</td><td>$299 MXN</td><td>$2,999 MXN</td></tr>
+</tbody>
+</table>
+<p>Los precios están en pesos mexicanos e incluyen los impuestos que cobra Apple; el precio en tu país es el que muestra la App antes de comprar. Lo que incluye cada plan aparece en la pantalla de planes de la App, que prevalece si difiere de esta página.</p>
 <ul>
-  <li><strong>No es un sistema fiscal.</strong> Los tickets que genera la App no son comprobantes fiscales (como un CFDI). Tú eres responsable de cumplir tus obligaciones fiscales y de facturación.</li>
-  <li><strong>No procesa pagos.</strong> La App registra los pagos que recibes; no procesa pagos con tarjeta ni electrónicos.</li>
-  <li><strong>El asistente puede equivocarse.</strong> Verifica cifras como los totales de ventas contra tus registros antes de tomar decisiones.</li>
-  <li><strong>Hardware y servicios de terceros.</strong> La impresión, Apple Intelligence, iCloud Drive, WhatsApp, mapas y correo dependen de hardware y servicios que no controlamos.</li>
+<li><b>Prueba gratis.</b> Los nuevos suscriptores pueden tener un mes de prueba gratis. Apple decide quién es elegible. Si no cancelas al menos 24 horas antes de que termine la prueba, la suscripción inicia y se cobra automáticamente.</li>
+<li><b>Cobro y renovación.</b> El pago se carga a tu Cuenta de Apple al confirmar la compra (o al terminar la prueba). La suscripción se renueva automáticamente por el mismo periodo y precio, salvo que desactives la renovación al menos 24 horas antes de que termine el periodo actual. La renovación se cobra dentro de las 24 horas previas al fin del periodo.</li>
+<li><b>Administrar y cancelar.</b> Puedes cambiar de plan o cancelar cuando quieras en Ajustes del dispositivo › [tu nombre] › Suscripciones. Al cancelar se detiene la siguiente renovación; conservas el plan hasta que termine el periodo ya pagado.</li>
+<li><b>Reembolsos.</b> Las compras las procesa Apple, no Harcode. Las solicitudes de reembolso las atiende Apple según sus políticas en <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>. Esto no limita los derechos que te da la ley de protección al consumidor.</li>
+<li><b>Cambios de precio.</b> Si cambiamos el precio de una suscripción, Apple te avisará con anticipación como lo exigen sus reglas y, cuando se requiera, tendrás que aceptarlo antes de que aplique.</li>
+<li><b>Sin plan.</b> Si no tienes un plan activo, tus tiendas se abren en modo de solo lectura: puedes consultar y exportar toda su información, pero no registrar ventas nuevas. Nunca borramos tus datos porque termine una suscripción.</li>
+<li><b>Miembros del equipo.</b> Unirse a la tienda de otra persona nunca requiere plan. El dueño de la tienda decide quién entra y qué puede hacer, y puede quitarle el acceso en cualquier momento.</li>
 </ul>
 
-<h2>5. Exclusión de garantías</h2>
-<p>La App se proporciona “tal cual” y “según disponibilidad”, sin garantías de ningún tipo, expresas o implícitas, en la máxima medida permitida por la ley. No garantizamos que la App esté libre de errores ni que nunca se pierdan datos.</p>
+<h2 id="datos">3. Tus datos y contenido</h2>
+<p>La información que capturas en la App es tuya. Se guarda en tus dispositivos y en archivos que tú controlas; no tenemos acceso a ella, salvo lo descrito en el Aviso de Privacidad para funciones opcionales en línea. Tú eres responsable de respaldar tus archivos de tienda y del uso correcto y legal de la información que registras, incluida la de tus clientes y empleados.</p>
 
-<h2>6. Limitación de responsabilidad</h2>
-<p>En la máxima medida permitida por la ley, Harcode no es responsable por daños indirectos, incidentales, especiales o consecuentes, ni por pérdida de ganancias, ingresos o datos derivados del uso o la imposibilidad de usar la App. Nuestra responsabilidad total se limita al monto que hayas pagado por la App, en su caso.</p>
+<h2 id="uso">4. Uso aceptable</h2>
+<p>Te comprometes a no usar la App ni sus servicios para violar la ley, vender bienes o servicios ilícitos, infringir derechos de otros, enviar mensajes no solicitados o engañosos, o interferir con nuestros servicios. No puedes aplicar ingeniería inversa, modificar ni redistribuir la App, salvo lo que permita la ley.</p>
 
-<h2>7. Apple</h2>
-<p>Estos Términos son entre tú y Harcode, no con Apple. Apple no es responsable de la App ni de su contenido, no tiene obligación de darle mantenimiento o soporte, y no es responsable de reclamaciones relacionadas con la App, incluidas las de responsabilidad por producto, cumplimiento legal o regulatorio, o propiedad intelectual. Si la App no cumple con alguna garantía aplicable, puedes notificarlo a Apple para el reembolso del precio pagado, en su caso; Apple no tiene ninguna otra obligación de garantía. Apple y sus subsidiarias son terceros beneficiarios de estos Términos y pueden hacerlos valer. Declaras que no te encuentras en un país sujeto a embargo del Gobierno de EE. UU. ni figuras en listas de partes prohibidas o restringidas de dicho gobierno.</p>
+<h2 id="pagos">5. Cobros con tarjeta (Stripe)</h2>
+<p>Donde esté disponible, la App permite que tu tienda cobre con tarjeta mediante Tap to Pay en iPhone y links de pago, procesados por Stripe, Inc. y sus filiales ("Stripe"). Esta función es opcional.</p>
+<ul>
+<li>Para usarla abres tu propia cuenta de Stripe y aceptas el <a href="https://stripe.com/legal/connect-account" rel="noopener">Contrato de Cuenta Conectada de Stripe</a>, que incluye el <a href="https://stripe.com/legal/ssa" rel="noopener">Contrato de Servicios de Stripe</a>. Stripe, no Harcode, recibe y transfiere el dinero; los pagos se depositan en la cuenta bancaria que le des a Stripe.</li>
+<li>Cada cobro con tarjeta tiene las comisiones de Stripe más una comisión de plataforma de Helio del 1% del monto, ambas descontadas del pago. Las comisiones vigentes se muestran en la App antes de activar los cobros con tarjeta.</li>
+<li>Tú eres el vendedor. Eres responsable de los bienes y servicios que vendes, de las devoluciones, contracargos y disputas, y de cumplir los requisitos de Stripe y de Apple para aceptar tarjetas.</li>
+<li>Harcode no es un banco ni una institución de pago y no guarda tus fondos.</li>
+</ul>
 
-<h2>8. Cambios y terminación</h2>
-<p>Podemos actualizar la App y estos Términos. Si sigues usando la App después de un cambio, aceptas los Términos actualizados. Tu licencia termina automáticamente si incumples estos Términos; puedes dejar de usar la App y eliminarla en cualquier momento.</p>
+<h2 id="en-linea">6. Funciones en línea</h2>
+<p>Algunas funciones opcionales usan servicios en línea de Harcode o de terceros: documentos para firmar, cobros con tarjeta, avisos de pedidos nuevos y otras que podamos agregar (como canales de mensajería, tiendas en la nube, facturación o el asistente en la nube). Requieren internet y pueden cambiar, limitarse o dejar de ofrecerse. Las funciones marcadas como "Pronto" o que aún no están en la App no forman parte de lo que compras hasta que se publiquen.</p>
+<ul>
+<li><b>Firmas por link.</b> La App te permite mandar documentos para firma electrónica y guarda una constancia de cuándo y desde dónde se firmaron. Tú decides si una firma electrónica es adecuada y válida para cada documento y debes conservar la copia firmada.</li>
+<li><b>Asistente.</b> Las respuestas del asistente se generan automáticamente y pueden equivocarse. Verifica cifras como totales de ventas contra tus registros antes de tomar decisiones.</li>
+</ul>
 
-<h2>9. Legislación aplicable</h2>
-<p>Estos Términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier controversia se someterá a los tribunales competentes de México, sin perjuicio de los derechos que te otorgan la Ley Federal de Protección al Consumidor o las leyes de tu país de residencia.</p>
+<h2 id="limitaciones">7. Limitaciones importantes</h2>
+<ul>
+<li><b>No es un sistema fiscal.</b> Los tickets que genera la App no son comprobantes fiscales (CFDI). Tú eres responsable de tus obligaciones fiscales y de facturación.</li>
+<li><b>Equipos y servicios de terceros.</b> La impresión, Apple Intelligence, iCloud Drive, los mapas, WhatsApp, el correo, Stripe y los servicios de Apple dependen de equipos y proveedores que no controlamos.</li>
+<li><b>Respaldos.</b> Puedes perder información si pierdes, dañas o borras tu dispositivo. Guarda copias de tu archivo de tienda con regularidad.</li>
+</ul>
 
-<h2>10. Contacto</h2>
-<p>Dudas, quejas o reclamaciones: Harcode, <a href="mailto:support@harcode.com">support@harcode.com</a></p>
+<h2 id="garantias">8. Exclusión de garantías</h2>
+<p>En la máxima medida que permita la ley, la App y sus servicios se ofrecen "tal cual" y "según disponibilidad", sin garantías de ningún tipo, expresas o implícitas, incluida la idoneidad para un fin específico. No garantizamos que la App esté libre de errores o interrupciones, ni que nunca se pierdan datos.</p>
 
+<h2 id="responsabilidad">9. Limitación de responsabilidad</h2>
+<p>En la máxima medida que permita la ley, Harcode no es responsable de daños indirectos, incidentales, especiales o consecuenciales, ni de pérdida de ganancias, ingresos o datos, derivados del uso o de la imposibilidad de usar la App. Nuestra responsabilidad total por cualquier reclamación se limita a lo que hayas pagado por la App en los doce meses anteriores a la reclamación. Nada en estos Términos limita derechos irrenunciables conforme a la Ley Federal de Protección al Consumidor u otra ley aplicable.</p>
+
+<h2 id="apple">10. Apple</h2>
+<p>Estos Términos son entre tú y Harcode, no con Apple. Apple no es responsable de la App ni de su contenido, no tiene obligación de darle mantenimiento ni soporte, y no es responsable de reclamaciones relacionadas con la App, incluidas las de responsabilidad por producto, cumplimiento legal o regulatorio, o propiedad intelectual. Si la App no cumple con alguna garantía aplicable, puedes avisar a Apple para que te reembolse el precio de compra, si lo hubo; Apple no tiene otra obligación de garantía. Apple y sus subsidiarias son terceros beneficiarios de estos Términos y pueden hacerlos valer frente a ti. Declaras que no te encuentras en un país sujeto a embargo del Gobierno de EE. UU. ni figuras en listas de partes prohibidas o restringidas de dicho gobierno.</p>
+
+<h2 id="propiedad">11. Propiedad intelectual</h2>
+<p>Helio, su logotipo, la App y este sitio son propiedad de Harcode y están protegidos por la ley. Estos Términos no te dan derecho a usar nuestros nombres ni marcas. Apple, iPhone, iPad, Mac, Apple Wallet y Tap to Pay son marcas de Apple Inc.; las demás marcas pertenecen a sus titulares.</p>
+
+<h2 id="cambios">12. Cambios y terminación</h2>
+<p>Podemos actualizar la App y estos Términos. Publicaremos los cambios en esta página con nueva fecha de vigencia y, si son importantes, te avisaremos en la App o en sus notas de versión. Si sigues usando la App después de un cambio, lo aceptas. Tu licencia termina automáticamente si incumples estos Términos; puedes dejar de usar la App y borrarla cuando quieras, y cancelar tu suscripción como se explica en la sección 2.</p>
+
+<h2 id="ley">13. Ley aplicable</h2>
+<p>Estos Términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier controversia se someterá a los tribunales competentes de México, sin perjuicio de tus derechos como consumidor, incluido acudir a la Procuraduría Federal del Consumidor (PROFECO), o conforme a las leyes de tu país de residencia.</p>
+
+<h2 id="contacto">14. Contacto</h2>
+<p>Dudas, quejas o reclamaciones: Harcode — <a href="mailto:support@harcode.com">support@harcode.com</a></p>
+
+  </article>
 </main>
-<footer>
-  <div class="bar">
-    <span>© 2026 Helio</span>
-    <span><a href="../../es/privacy/">Privacidad</a> <a href="../../es/terms/" aria-current="page">Términos</a> <a href="../../es/support/">Soporte</a> <a href="../../terms/" hreflang="en" lang="en">English</a></span>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Harcode · Helio</span>
+    <nav aria-label="Pie de página">
+      <a href="../../es/privacy/">Privacidad</a>
+      <a href="../../es/terms/" aria-current="page">Términos</a>
+      <a href="../../es/support/">Soporte</a>
+      <a href="../../terms/" hreflang="en" lang="en">English</a>
+    </nav>
   </div>
 </footer>
+<script src="../../assets/landing.js"></script>
 </body>
 </html>
