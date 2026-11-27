@@ -1,0 +1,27 @@
+/* Legal and support pages. Builds on landing.css tokens. */
+.doc-wrap { padding: 48px 20px 40px; }
+.doc { max-width: 760px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: 48px 52px; }
+.doc h1 { font-size: clamp(34px, 5vw, 48px); margin-bottom: 8px; }
+.doc .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
+.doc .lede { color: var(--muted); font-size: 19px; margin: 6px 0 24px; }
+.doc h2 { font-size: 22px; font-family: var(--display); margin: 40px 0 10px; letter-spacing: -0.01em; scroll-margin-top: 90px; }
+.doc p, .doc li { font-size: 16.5px; line-height: 1.65; }
+.doc p + p { margin-top: 12px; }
+.doc ul { padding-left: 22px; margin: 12px 0; }
+.doc li + li { margin-top: 8px; }
+.doc code { font-size: .92em; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.doc .summary { background: var(--yellow-soft); border-radius: 18px; padding: 18px 22px; margin: 8px 0 28px; font-size: 16.5px; }
+.doc table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+.doc th, .doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.doc th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
+.doc td:nth-child(n+2), .doc th:nth-child(n+2) { white-space: nowrap; text-align: right; }
+.doc .faq { max-width: none; margin-top: 14px; }
+.doc .faq details { background: var(--bg); }
+.foot nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) {
+  .doc-wrap { padding: 20px 12px 24px; }
+  .doc { padding: 30px 20px; border-radius: 22px; }
+  .doc table { font-size: 14px; }
+  .doc th, .doc td { padding: 8px 6px; }
+  .doc td:nth-child(n+2) { white-space: normal; }
+}

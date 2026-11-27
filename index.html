@@ -1,79 +1,564 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Point of sale for iPhone and iPad · Helio</title>
-<meta name="description" content="Point of sale for iPhone and iPad for Helio">
+<title>Helio · Point of sale for iPhone and iPad</title>
+<meta name="description" content="Sell, take orders, track inventory and look after customers from your iPhone or iPad. Works offline, no account, no contract. Try Helio free for a month.">
+<link rel="canonical" href="https://helio.harcode.com/">
+<link rel="alternate" hreflang="en" href="https://helio.harcode.com/">
+<link rel="alternate" hreflang="es" href="https://helio.harcode.com/es/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Helio · Your whole business, in your hand">
+<meta property="og:description" content="The point of sale for iPhone and iPad that works without internet. Try it free for a month.">
+<meta property="og:image" content="https://helio.harcode.com/assets/icon.png">
+<meta name="theme-color" content="#F7F5F0">
 <link rel="icon" href="./assets/icon.png">
-<style>
-  :root { --accent: #2563DC; --bg: #fbfbfd; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --line: #e5e5ea; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #000; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; --line: #38383a; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
-  header { border-bottom: 1px solid var(--line); background: var(--card); }
-  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--fg); text-decoration: none; }
-  .brand img { width: 32px; height: 32px; border-radius: 8px; }
-  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
-  nav a { color: var(--muted); text-decoration: none; }
-  nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
-  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.02em; }
-  h2 { font-size: 22px; margin: 36px 0 8px; }
-  h3 { font-size: 18px; margin: 24px 0 4px; }
-  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
-  .summary { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
-  a { color: var(--accent); }
-  ul { padding-left: 22px; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; margin: 10px 0; }
-  summary { cursor: pointer; font-weight: 600; }
-  .button { display: inline-block; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
-  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  footer .bar { justify-content: space-between; }
-  footer a { color: var(--muted); }
-</style>
+<link rel="apple-touch-icon" href="./assets/icon.png">
+<link rel="stylesheet" href="./assets/landing.css">
 </head>
 <body>
-<header>
-  <div class="bar">
-    <a class="brand" href="./"><img src="./assets/icon.png" alt="">Helio</a>
-    <nav><a href="./privacy/">Privacy</a> <a href="./terms/">Terms</a> <a href="./support/">Support</a> <a href="./es/" hreflang="es" lang="es">Español</a></nav>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.3 11h10.8l2-8H6.4"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 9v6M11 9v6M14 9v6M17 9v6"/></symbol>
+  <symbol id="i-split" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M12 6v12M6.5 10h2M15.5 14h2"/></symbol>
+  <symbol id="i-percent" viewBox="0 0 24 24"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="17" r="2.3"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H6a2 2 0 0 0 0 4h13.5A1.5 1.5 0 0 1 21 9.5v9a1.5 1.5 0 0 1-1.5 1.5H6a2 2 0 0 1-2-2V6"/><circle cx="16.5" cy="14" r="1.2"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.3"/><path d="M3 19.5c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6M17.5 14.7c1.9.6 3.1 2.2 3.5 4.8"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 10h7M8.5 14h7M8.5 18h4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9z"/><circle cx="8.5" cy="8.5" r="1.4"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v11M7.5 9.5L12 14l4.5-4.5M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.2h4.2"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-credit" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10M6 7c0 4 4 5 10 5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 20L20 4"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="9.5" r="1.8"/><path d="M21 16l-5-5-9 9"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="1"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="1"/><path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM18 14h2.5M14 18v2.5"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5V20h16V9.5M3 9.5L5 4h14l2 5.5c0 1.5-1.3 2.5-2.8 2.5S15.5 11 15.5 9.5c0 1.5-1.6 2.5-3.5 2.5s-3.5-1-3.5-2.5C8.5 11 7.3 12 5.8 12S3 11 3 9.5z"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M7.5 15l4-4.5 3 3L20 7"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="5.5" ry="2.5"/><path d="M3.5 7v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V7M3.5 11v4c0 1.4 2.5 2.5 5.5 2.5"/><ellipse cx="15.5" cy="15" rx="5" ry="2.3"/><path d="M10.5 15v3.5c0 1.3 2.2 2.3 5 2.3s5-1 5-2.3V15"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/></symbol>
+  <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M4 4l16 16M8.5 16.4a5 5 0 0 1 7 0M5.2 12.9a10 10 0 0 1 4.3-2.5M14.6 10.5a10 10 0 0 1 4.2 2.4M2 9.3a15 15 0 0 1 4.4-2.8M10.5 5.6A15 15 0 0 1 22 9.3"/><circle cx="12" cy="19.5" r=".6"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8c-1-3-5-4-5-1.5S12 8 12 8zM12 8c1-3 5-4 5-1.5S12 8 12 8z"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="17" rx="2.5"/><path d="M3 9a6 6 0 0 1 0 6M20.5 7.5a9 9 0 0 1 0 9"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M15 4.5l4.5 4.5L9 19.5H4.5V15z"/><path d="M3 21.5h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 18.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H8z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.5 1.6A3.8 3.8 0 0 1 17.5 18.5z"/></symbol>
+  <symbol id="i-invoice" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M2.5 11l4-4 3 1.5L12 7l5.5 1.5 4 2.5"/><path d="M6.5 7l-1 7 4 4 1.5-1 1.5 1.5 1.5-1 1.5 1 3.5-4.5-3-3.5-3 1.5-2-1.5"/></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><path d="M4 20.5h16V14a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 16c2 1.2 3.3 1.2 4.7 0 1.4 1.2 2.9 1.2 4.3 0 1.4 1.2 2.9 1.2 4.3 0 1.1.8 1.8.9 2.7.4M12 12V8.5M12 6.5c-.9-1 0-2.5 0-3.5.9 1 1 2.5 0 3.5z"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8.5 3.5L3.5 6.5l2 4 2-1v11h9v-11l2 1 2-4-5-3c0 1.7-1.6 3-3.5 3s-3.5-1.3-3.5-3z"/></symbol>
+  <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3.5h10v8H7zM5.5 11.5h13v3h-13zM7 14.5V21M17 14.5V21"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4.5 4.5 0 0 0 5.7 5.7L12 20.5a2.1 2.1 0 0 1-3-3l8.3-8.2a4.5 4.5 0 0 1-2.8-2.8zM15 4a4.5 4.5 0 0 1 5 5"/></symbol>
+  <symbol id="i-tent" viewBox="0 0 24 24"><path d="M12 3.5L2.5 20h19z"/><path d="M12 3.5L8 20M12 3.5l4 16.5M2.5 20h19"/></symbol>
+  <symbol id="balloon" viewBox="0 0 60 110"><path d="M30 4c14 0 25 11.5 25 27 0 17-13 31-25 33C18 62 5 48 5 31 5 15.5 16 4 30 4z" fill="#FFD447" stroke="#2563DC" stroke-width="3.5"/><path d="M15 22c2-6 6-9.5 11-10.5" stroke="#2563DC" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M26 64l4 5 4-5z" fill="#2563DC"/><path d="M30 69c-3 10 5 18 0 26s3 12 0 15" stroke="#2563DC" stroke-width="2.5" fill="none"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="./assets/icon.png" alt="" width="36" height="36">Helio</a>
+    <nav aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#team">Team</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="lang" href="./es/" hreflang="es" lang="es">Español</a>
+    <a class="btn btn-primary" href="#download" data-download data-live-label="Download"><span data-label>Try free</span></a>
   </div>
 </header>
-<main>
 
-<div style="text-align:center;padding:24px 0 8px">
-  <img src="./assets/icon.png" alt="Helio app icon" width="128" height="128" style="border-radius:28px;box-shadow:0 8px 30px rgba(0,0,0,.15)">
-  <h1 style="margin-top:20px">Helio</h1>
-  <p class="meta" style="font-size:20px">A private, offline point of sale for iPhone and iPad.</p>
-  <p><a class="button" href="#" aria-disabled="true">Coming soon to the App Store</a></p>
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="balloons" aria-hidden="true">
+    <svg class="balloon"><use href="#balloon"/></svg>
+    <svg class="balloon"><use href="#balloon"/></svg>
+    <svg class="balloon"><use href="#balloon"/></svg>
+    <svg class="balloon"><use href="#balloon"/></svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Keeps selling when the internet drops</span>
+      <h1>Your whole business, <em>in your hand</em>.</h1>
+      <p class="lede">Helio is the point of sale for iPhone and iPad that sells, saves orders, tracks inventory and looks after your customers. No contracts, no expensive hardware, no account to create. Your data stays yours.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#download" data-download data-live-label="Try a month free"><span data-label>Try a month free</span> <svg class="icon"><use href="#i-download"/></svg></a>
+        <a class="btn btn-ghost" href="#features">See everything it does</a>
+      </div>
+      <p class="fine">One month free on any plan · Cancel any time from the App Store</p>
+      <ul class="ticks">
+        <li><svg class="icon"><use href="#i-check"/></svg>Sells offline</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>No account or password</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>iPhone, iPad and Mac</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>English and Spanish</li>
+      </ul>
+    </div>
+
+    <div class="device-stage" aria-label="Helio's Sell screen on an iPhone" role="img">
+      <div class="phone" aria-hidden="true">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="scr-head"><b>Sell</b><span class="pill"><i></i>3 linked</span></div>
+          <div class="search"><span>Search products</span><span>⌁</span></div>
+          <div class="chips"><span class="on">All</span><span>Pastries</span><span>Cakes</span><span>Drinks</span></div>
+          <div class="grid-prod">
+            <div class="prod"><div class="sw" style="background:#FFF3C4">🥐</div><b>Croissant</b><span>$14.00</span></div>
+            <div class="prod"><div class="sw" style="background:#E5EDFC">☕️</div><b>Coffee</b><span>$28.00</span></div>
+            <div class="prod"><div class="sw" style="background:#FDE4E4">🎂</div><b>Tres leches cake</b><span>$380.00</span></div>
+            <div class="prod"><div class="sw" style="background:#E3F6EC">🍪</div><b>Cookies</b><span>$45.00</span></div>
+          </div>
+          <div class="cart">
+            <div class="row"><span>2 × Coffee</span><span>$56.00</span></div>
+            <div class="row"><span>1 × Tres leches cake</span><span>$380.00</span></div>
+            <div class="row total"><span>Total</span><span>$436.00</span></div>
+            <div class="pay">Charge $436.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="float-card fc-1" aria-hidden="true"><span class="ic" style="background:#E3F6EC;color:#1F9D63"><svg class="icon"><use href="#i-wifi-off"/></svg></span><div><b>Sale saved</b><span>No internet, no problem</span></div></div>
+      <div class="float-card fc-2" aria-hidden="true"><span class="ic" style="background:#FFF3C4;color:#14213D"><svg class="icon"><use href="#i-calendar"/></svg></span><div><b>Order for Saturday</b><span>3-tier cake · In progress</span></div></div>
+      <div class="float-card fc-3" aria-hidden="true"><span class="ic" style="background:#E5EDFC;color:#2563DC"><svg class="icon"><use href="#i-users"/></svg></span><div><b>Register · Counter · Stockroom</b><span>Linked without Wi-Fi</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><svg class="icon"><use href="#i-wifi-off"/></svg>Works without internet</div>
+    <div><svg class="icon"><use href="#i-lock"/></svg>Your data lives on your device</div>
+    <div><svg class="icon"><use href="#i-users"/></svg>Your team joins free</div>
+    <div><svg class="icon"><use href="#i-gift"/></svg>First month free</div>
+    <div><svg class="icon"><use href="#i-handshake"/></svg>No contract</div>
+  </div>
 </div>
-<div class="summary">Sell, track inventory, manage customers, and print or share receipts — all on your device. Your store lives in a single <code>.helio</code> file that you own. No account, no cloud, no tracking.</div>
-<h2>Features</h2>
-<ul>
-  <li>Products, optional inventory, customers, taxes and currency</li>
-  <li>Split payments, refunds and optional cash-register sessions</li>
-  <li>Image and PDF receipts, AirPrint and Bluetooth thermal printers</li>
-  <li>Sales analytics and an on-device assistant powered by Apple Intelligence</li>
-  <li>Import existing records from CSV and SQLite files</li>
-  <li>Available in English and Spanish</li>
-</ul>
-<h2>Information</h2>
-<ul>
-  <li><a href="./privacy/">Privacy Policy</a></li>
-  <li><a href="./terms/">Terms of Use</a></li>
-  <li><a href="./support/">Support &amp; FAQ</a></li>
-</ul>
+
+<!-- PAINS -->
+<section class="block">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Sound familiar?</p>
+      <h2>Ditch the notebook. Keep the business.</h2>
+    </div>
+    <div class="pains">
+      <div class="pain reveal"><div class="emoji">📒</div><p class="was">Writing sales in a notebook and adding it all up at closing.</p><p class="now">Every sale is recorded with its ticket, and the register count tells you what should be in the drawer.</p></div>
+      <div class="pain reveal"><div class="emoji">📶</div><p class="was">The internet goes down and you can't sell.</p><p class="now">Helio sells offline. Your store lives on your iPhone, not on a server.</p></div>
+      <div class="pain reveal"><div class="emoji">💸</div><p class="was">Paying for an expensive system with a contract and special hardware.</p><p class="now">Use the iPhone or iPad you already have. Pay monthly, cancel any time.</p></div>
+      <div class="pain reveal"><div class="emoji">🤷</div><p class="was">Not knowing what sells, what's running out or who owes you.</p><p class="now">Inventory, best sellers and receivables at a glance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="block" id="features" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Features</p>
+      <h2>Everything your business needs, in one app.</h2>
+      <p>From the first sale of the day to the closing count, from the quote to the delivery. Pick a topic:</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Helio features">
+      <button role="tab" id="t-sell" aria-controls="p-sell" aria-selected="true"><svg class="icon"><use href="#i-cart"/></svg>Sell</button>
+      <button role="tab" id="t-orders" aria-controls="p-orders" aria-selected="false"><svg class="icon"><use href="#i-clip"/></svg>Orders</button>
+      <button role="tab" id="t-catalog" aria-controls="p-catalog" aria-selected="false"><svg class="icon"><use href="#i-box"/></svg>Catalog &amp; inventory</button>
+      <button role="tab" id="t-customers" aria-controls="p-customers" aria-selected="false"><svg class="icon"><use href="#i-person"/></svg>Customers</button>
+      <button role="tab" id="t-tickets" aria-controls="p-tickets" aria-selected="false"><svg class="icon"><use href="#i-receipt"/></svg>Receipts</button>
+      <button role="tab" id="t-numbers" aria-controls="p-numbers" aria-selected="false"><svg class="icon"><use href="#i-chart"/></svg>Numbers</button>
+      <button role="tab" id="t-delivery" aria-controls="p-delivery" aria-selected="false"><svg class="icon"><use href="#i-truck"/></svg>Deliveries</button>
+      <button role="tab" id="t-data" aria-controls="p-data" aria-selected="false"><svg class="icon"><use href="#i-lock"/></svg>Your data</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-sell" aria-labelledby="t-sell">
+      <div class="intro">
+        <h3>Ring up in seconds.</h3>
+        <p>A sell screen built for the line at the counter: tap, scan, charge. No extra steps.</p>
+        <p class="plan-tag">From Lift</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-grid"/></svg><div><b>Sell from your catalog</b><span>Tap products, search, or filter by category and favorites.</span></div></li>
+        <li><svg class="icon"><use href="#i-scan"/></svg><div><b>Barcode scanner</b><span>With the iPhone camera. No extra reader.</span></div></li>
+        <li><svg class="icon"><use href="#i-split"/></svg><div><b>Split payments</b><span>Part cash, part card.</span></div></li>
+        <li><svg class="icon"><use href="#i-percent"/></svg><div><b>Discounts and notes</b><span>On any item or the whole sale.</span></div></li>
+        <li><svg class="icon"><use href="#i-undo"/></svg><div><b>Refunds and cancellations</b><span>Partial or full, reflected in your history.</span></div></li>
+        <li><svg class="icon"><use href="#i-cash"/></svg><div><b>Register sessions</b><span>Opening and closing counts, with what should be in the drawer.</span></div></li>
+        <li><svg class="icon"><use href="#i-wallet"/></svg><div><b>Your own payment methods</b><span>Bank transfer, vouchers and more, each with its fee. <em>Float</em></span></div></li>
+        <li><svg class="icon"><use href="#i-coins"/></svg><div><b>Surcharges by method</b><span>For example card +5%, charged and itemized for you. <em>Float</em></span></div></li>
+        <li><svg class="icon"><use href="#i-tag"/></svg><div><b>Open price</b><span>Sell something that isn't in the catalog, with its cost if you like.</span></div></li>
+        <li><svg class="icon"><use href="#i-users"/></svg><div><b>Sales by salesperson</b><span>Filter the history and see who sold what.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-orders" aria-labelledby="t-orders" hidden>
+      <div class="intro">
+        <h3>Orders you won't forget.</h3>
+        <p>Quotes, layaways and orders with a date. Each one moves through the steps you choose.</p>
+        <p class="plan-tag">From Float</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-clip"/></svg><div><b>Orders and quotes</b><span>Save the sale for later and charge it when it's time.</span></div></li>
+        <li><svg class="icon"><use href="#i-calendar"/></svg><div><b>Delivery or event date</b><span>For Saturday's cake or Sunday's rental.</span></div></li>
+        <li><svg class="icon"><use href="#i-flag"/></svg><div><b>Your own statuses</b><span>Pending, In progress, Ready… whatever you use.</span></div></li>
+        <li><svg class="icon"><use href="#i-calendar"/></svg><div><b>Calendar</b><span>See your deliveries and events, and connect your calendars.</span></div></li>
+        <li><svg class="icon"><use href="#i-sliders"/></svg><div><b>Custom fields</b><span>Add the details your business needs to orders, products and customers.</span></div></li>
+        <li><svg class="icon"><use href="#i-history"/></svg><div><b>Saved filters</b><span>Your usual views, one tap away.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-catalog" aria-labelledby="t-catalog" hidden>
+      <div class="intro">
+        <h3>Know what you have and what's missing.</h3>
+        <p>Your whole catalog with prices, costs and taxes. And when you need it, stock kept up to date.</p>
+        <p class="plan-tag">Catalog from Lift · Inventory on Fly</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-box"/></svg><div><b>Complete products</b><span>SKU, barcode, price, cost and taxes.</span></div></li>
+        <li><svg class="icon"><use href="#i-percent"/></svg><div><b>Taxes and currency</b><span>Set your own rates and currency.</span></div></li>
+        <li><svg class="icon"><use href="#i-handshake"/></svg><div><b>Suppliers</b><span>Who supplies what, at hand.</span></div></li>
+        <li><svg class="icon"><use href="#i-import"/></svg><div><b>Import from Excel</b><span>CSV and SQLite, with ready-to-fill templates.</span></div></li>
+        <li><svg class="icon"><use href="#i-chart"/></svg><div><b>Stock tracking</b><span>Per product, only where you want it. <em>Fly</em></span></div></li>
+        <li><svg class="icon"><use href="#i-clip"/></svg><div><b>Purchase orders</b><span>Order from suppliers and receive the goods. <em>Fly</em></span></div></li>
+        <li><svg class="icon"><use href="#i-chair"/></svg><div><b>Rentals</b><span>Keep track of what's out on rent. <em>Fly</em></span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-customers" aria-labelledby="t-customers" hidden>
+      <div class="intro">
+        <h3>Customers who come back.</h3>
+        <p>Know every customer, give them credit with a limit and reward them for returning.</p>
+        <p class="plan-tag">Customers from Lift · Credit and loyalty on Fly</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-person"/></svg><div><b>Customer history</b><span>Purchases, orders and documents in one place.</span></div></li>
+        <li><svg class="icon"><use href="#i-merge"/></svg><div><b>Merge duplicates</b><span>Combine two records of the same customer without losing anything.</span></div></li>
+        <li><svg class="icon"><use href="#i-credit"/></svg><div><b>Credit with limits</b><span>Who owes you, how much and since when. <em>Fly</em></span></div></li>
+        <li><svg class="icon"><use href="#i-tag"/></svg><div><b>Coupons</b><span>Single-use or multi-use codes. <em>Fly</em></span></div></li>
+        <li><svg class="icon"><use href="#i-star"/></svg><div><b>Loyalty program</b><span>Rewards for visits and a card you scan at the register. <em>Fly</em></span></div></li>
+        <li><svg class="icon"><use href="#i-eye"/></svg><div><b>Customer privacy</b><span>Hide their details from staff who don't need them.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-tickets" aria-labelledby="t-tickets" hidden>
+      <div class="intro">
+        <h3>Receipts with your brand.</h3>
+        <p>Send them by WhatsApp or email, save them to Photos or print them. With your logo and details.</p>
+        <p class="plan-tag">From Lift</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-image"/></svg><div><b>Image or PDF</b><span>Share from your iPhone to anywhere.</span></div></li>
+        <li><svg class="icon"><use href="#i-store"/></svg><div><b>Your logo and details</b><span>On every receipt, image and PDF.</span></div></li>
+        <li><svg class="icon"><use href="#i-qr"/></svg><div><b>QR code</b><span>On the receipt, so your customer can find it later.</span></div></li>
+        <li><svg class="icon"><use href="#i-printer"/></svg><div><b>AirPrint and thermal printers</b><span>Print on Bluetooth receipt printers. <em>Float</em></span></div></li>
+        <li><svg class="icon"><use href="#i-sparkle"/></svg><div><b>No Helio branding</b><span>Receipts that are 100% yours, without "Made with Helio". <em>Float</em></span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-numbers" aria-labelledby="t-numbers" hidden>
+      <div class="intro">
+        <h3>Know how your business is doing.</h3>
+        <p>Sales, profit and expenses without spreadsheets. And an assistant you can ask like a person.</p>
+        <p class="plan-tag">Analytics on Fly · Assistant from Float</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-trend"/></svg><div><b>Sales and trends</b><span>Best sellers by day, week or month.</span></div></li>
+        <li><svg class="icon"><use href="#i-coins"/></svg><div><b>Real profit</b><span>Using the cost of every item sold.</span></div></li>
+        <li><svg class="icon"><use href="#i-wallet"/></svg><div><b>Finance</b><span>Log expenses and fixed costs, and see what's left.</span></div></li>
+        <li><svg class="icon"><use href="#i-star"/></svg><div><b>Loyalty numbers</b><span>Returning customers, visits and rewards.</span></div></li>
+        <li><svg class="icon"><use href="#i-sparkle"/></svg><div><b>Assistant on your iPhone</b><span>"What sold best this month?" Answered with Apple Intelligence, without your data leaving the phone. <em>Float</em></span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-delivery" aria-labelledby="t-delivery" hidden>
+      <div class="intro">
+        <h3>Deliveries on the map.</h3>
+        <p>If you deliver, Helio shows you where to go, what to charge for shipping and what's left for today.</p>
+        <p class="plan-tag">On Fly</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-map"/></svg><div><b>Map of orders and customers</b><span>Your day at a glance.</span></div></li>
+        <li><svg class="icon"><use href="#i-pin"/></svg><div><b>Delivery zones</b><span>Draw your zones and give them a delivery cost and rules.</span></div></li>
+        <li><svg class="icon"><use href="#i-route"/></svg><div><b>Today's deliveries</b><span>Assign them and mark them delivered.</span></div></li>
+        <li><svg class="icon"><use href="#i-calendar"/></svg><div><b>By date</b><span>Dated orders show up on the day they're due.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-data" aria-labelledby="t-data" hidden>
+      <div class="intro">
+        <h3>Your store is yours.</h3>
+        <p>No account, no mandatory cloud. Your store is a file you can back up, move or export.</p>
+        <p class="plan-tag">On every plan</p>
+      </div>
+      <ul class="feat-list">
+        <li><svg class="icon"><use href="#i-person"/></svg><div><b>No account</b><span>Open Helio and start. No email, no password.</span></div></li>
+        <li><svg class="icon"><use href="#i-file"/></svg><div><b>One .helio file</b><span>Your whole store in a single file you control.</span></div></li>
+        <li><svg class="icon"><use href="#i-history"/></svg><div><b>Automatic versions</b><span>Go back to an earlier copy if something goes wrong.</span></div></li>
+        <li><svg class="icon"><use href="#i-download"/></svg><div><b>Export any time</b><span>Even without a plan you can open, view and export everything.</span></div></li>
+        <li><svg class="icon"><use href="#i-store"/></svg><div><b>Several stores</b><span>As many as you want, with no sales cap.</span></div></li>
+        <li><svg class="icon"><use href="#i-merge"/></svg><div><b>Merge copies</b><span>Compare two copies of your store and combine them.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SPOTLIGHTS -->
+<section class="block" id="team" style="padding-top:0">
+  <div class="wrap">
+    <div class="spot reveal">
+      <div>
+        <p class="kicker">Work as a team</p>
+        <h2>Your team linked, even without Wi-Fi.</h2>
+        <p class="big">Invite staff with a QR code. Nearby iPhones and iPads connect directly to each other: the order taken at the counter reaches the register instantly, with or without internet.</p>
+        <ul>
+          <li><svg class="icon"><use href="#i-check"/></svg>Roles and permissions: everyone sees and does only their part.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Hide customer details from staff who don't need them.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Your staff don't pay: joining your store is free.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>The iPad as the register, iPhones for taking orders.</li>
+        </ul>
+        <p style="margin-top:22px"><span class="plan-tag">Inviting your team: from Float</span></p>
+      </div>
+      <div class="art" aria-hidden="true">
+        <span class="no-wifi"><svg class="icon" style="width:16px;height:16px"><use href="#i-wifi-off"/></svg>No Wi-Fi</span>
+        <div class="mesh">
+          <svg class="links" viewBox="0 0 100 80" preserveAspectRatio="none"><path d="M22 18 C 45 8, 58 8, 78 18"/><path d="M22 22 C 26 48, 36 60, 50 64"/><path d="M78 22 C 74 48, 64 60, 50 64"/></svg>
+          <div class="node" style="left:0;top:4%"><div class="glyph">📱</div><b>Counter</b><span>Takes the order</span></div>
+          <div class="node" style="right:0;top:4%"><div class="glyph">🖥️</div><b>Register (iPad)</b><span>Charges</span></div>
+          <div class="node" style="left:50%;bottom:0;transform:translateX(-50%)"><div class="glyph">📦</div><b>Stockroom</b><span>Prepares it</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot flip reveal">
+      <div>
+        <p class="kicker">Truly private</p>
+        <h2>Your sales don't live on anyone's server.</h2>
+        <p class="big">Helio keeps your store on your device, not in someone else's cloud. We don't see your sales, your customers or your prices. And if you ever stop paying, your data is still there: you can always open and export it.</p>
+        <ul>
+          <li><svg class="icon"><use href="#i-check"/></svg>No account, no tracking, no ads.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Automatic versions to go back to an earlier copy.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Bring your products and customers from a spreadsheet.</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>We never hold your data hostage.</li>
+        </ul>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div style="display:grid;justify-items:center">
+          <div class="file">
+            <div class="glyph"><img src="./assets/icon.png" alt="" width="74" height="74"></div>
+            <b>Corner Bakery.helio</b>
+            <span>Your store, in one file</span>
+          </div>
+          <div class="versions">
+            <div><b>Today, 6:40 PM</b><span>Automatic version</span></div>
+            <div><b>Yesterday, 9:12 PM</b><span>Automatic version</span></div>
+            <div><b>Monday, 8:05 PM</b><span>Automatic version</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kicker">Who Helio is for</p>
+      <h2>Made for real businesses.</h2>
+      <p>If you sell face to face, Helio fits. A few examples:</p>
+    </div>
+    <div class="who">
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-cake"/></svg><h3>Bakeries and cake shops</h3><p>Counter sales plus dated orders for cakes and events.</p></div>
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-store"/></svg><h3>Corner stores and groceries</h3><p>Scan barcodes, track stock and give your regulars credit.</p></div>
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-shirt"/></svg><h3>Boutiques and gift shops</h3><p>A catalog with photos, layaways, coupons and returning customers.</p></div>
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-chair"/></svg><h3>Party and furniture rentals</h3><p>Quotes, event dates, rentals and deliveries on the map.</p></div>
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-wrench"/></svg><h3>Workshops and services</h3><p>Quote it, save the order and charge it on delivery.</p></div>
+      <div class="reveal"><svg class="icon glyph" style="width:34px;height:34px;color:var(--blue)"><use href="#i-tent"/></svg><h3>Markets, fairs and pop-ups</h3><p>Sell where there's no signal. Everything is saved on your iPhone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMING SOON -->
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="soon-wrap reveal">
+      <div class="head">
+        <p class="kicker">Coming soon</p>
+        <h2>Helio keeps growing with you.</h2>
+        <p>These features are already built and in testing. They arrive in your app as an update, with no system to switch.</p>
+      </div>
+      <div class="soon">
+        <div><svg class="icon"><use href="#i-tap"/></svg><b>Tap to Pay on iPhone</b><span>Take cards by tapping them on your iPhone. No terminal. The money goes straight to your account.</span></div>
+        <div><svg class="icon"><use href="#i-link"/></svg><b>Payment links and quick charge</b><span>A QR code or link so customers pay from their own phone, and a keypad to charge any amount instantly.</span></div>
+        <div><svg class="icon"><use href="#i-pen"/></svg><b>Signing by link</b><span>Send a contract to be signed from a phone. Encrypted on your device.</span></div>
+        <div><svg class="icon"><use href="#i-invoice"/></svg><b>CFDI 4.0 invoicing</b><span>Issue Mexican tax invoices from Helio, without another system.</span></div>
+        <div><svg class="icon"><use href="#i-chat"/></svg><b>WhatsApp, Messenger and Instagram</b><span>An assistant that answers customers, quotes and takes orders with your real prices.</span></div>
+        <div><svg class="icon"><use href="#i-cloud"/></svg><b>Helio Cloud</b><span>Your store reachable from anywhere, for you and your team.</span></div>
+        <div><svg class="icon"><use href="#i-wallet"/></svg><b>Loyalty card in Apple Wallet</b><span>Customers carry their card on their iPhone and you scan it at the register.</span></div>
+        <div><svg class="icon"><use href="#i-handshake"/></svg><b>Supplier portal</b><span>Suppliers check your stock and restock you from a link.</span></div>
+        <div><svg class="icon"><use href="#i-sparkle"/></svg><b>Cloud assistant</b><span>A more capable assistant for questions about your whole business.</span></div>
+      </div>
+      <p class="note">Some dates depend on approvals from Apple, Stripe, Meta and Mexico's SAT. Card payments will carry a 1% Helio fee on top of Stripe's fee.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="block" id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="head center reveal" style="text-align:center">
+      <p class="kicker">Pricing</p>
+      <h2>Lift off at your own pace.</h2>
+      <p>Every plan starts with a free month. Move up or down any time.</p>
+    </div>
+    <div style="text-align:center">
+      <div class="billing" role="group" aria-label="Billing">
+        <button type="button" data-billing="monthly" aria-pressed="true">Monthly</button>
+        <button type="button" data-billing="yearly" aria-pressed="false">Yearly <span class="save">2 months free</span></button>
+      </div>
+    </div>
+
+    <div class="plans">
+      <div class="plan reveal">
+        <div class="name"><svg viewBox="0 0 60 110" aria-hidden="true"><use href="#balloon"/></svg><h3>Lift</h3></div>
+        <p class="tagline">To start selling today, with the essentials.</p>
+        <div class="price">$<span data-monthly="49" data-yearly="490">49</span> <small>MXN</small></div>
+        <p class="per" data-monthly="per month" data-yearly="per year · save $98">per month</p>
+        <a class="btn btn-ghost" href="#download" data-download data-live-label="Try Lift free"><span data-label>Try Lift free</span></a>
+        <ul>
+          <li><svg class="icon"><use href="#i-check"/></svg>Unlimited sales</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>As many stores as you want</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Products, customers and suppliers</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Barcode scanner</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Sales history and refunds</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Cash and card payments</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Digital receipts with your logo</li>
+          <li class="soon-item"><svg class="icon"><use href="#i-check"/></svg><span>Tap to Pay and payment links <span class="tag">Soon</span></span></li>
+        </ul>
+      </div>
+
+      <div class="plan pop reveal">
+        <span class="badge">Most popular</span>
+        <div class="name"><svg viewBox="0 0 60 110" aria-hidden="true"><use href="#balloon"/></svg><svg viewBox="0 0 60 110" aria-hidden="true" style="margin-left:-18px"><use href="#balloon"/></svg><h3>Float</h3></div>
+        <p class="tagline">For businesses with orders, a team and a printer.</p>
+        <div class="price">$<span data-monthly="149" data-yearly="1,490">149</span> <small>MXN</small></div>
+        <p class="per" data-monthly="per month" data-yearly="per year · save $298">per month</p>
+        <a class="btn btn-primary" href="#download" data-download data-live-label="Try Float free"><span data-label>Try Float free</span></a>
+        <ul>
+          <li class="everything">Everything in Lift, plus:</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Orders, quotes and layaways</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Your own payment methods, fees and surcharges</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Invite your team, linked without Wi-Fi</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Bluetooth thermal printer</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Receipts without Helio branding</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Assistant on your iPhone</li>
+        </ul>
+      </div>
+
+      <div class="plan reveal">
+        <div class="name"><svg viewBox="0 0 60 110" aria-hidden="true"><use href="#balloon"/></svg><svg viewBox="0 0 60 110" aria-hidden="true" style="margin-left:-18px"><use href="#balloon"/></svg><svg viewBox="0 0 60 110" aria-hidden="true" style="margin-left:-18px"><use href="#balloon"/></svg><h3>Fly</h3></div>
+        <p class="tagline">To grow: inventory, numbers, credit and deliveries.</p>
+        <div class="price">$<span data-monthly="299" data-yearly="2,999">299</span> <small>MXN</small></div>
+        <p class="per" data-monthly="per month" data-yearly="per year · save $589">per month</p>
+        <a class="btn btn-ghost" href="#download" data-download data-live-label="Try Fly free"><span data-label>Try Fly free</span></a>
+        <ul>
+          <li class="everything">Everything in Float, plus:</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Inventory and purchase orders</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Sales analytics and finance</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Customer credit with limits</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Coupons and loyalty program</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Maps, zones and deliveries</li>
+          <li class="soon-item"><svg class="icon"><use href="#i-check"/></svg><span>Signing by link <span class="tag">Soon</span></span></li>
+          <li class="soon-item"><svg class="icon"><use href="#i-check"/></svg><span>WhatsApp, Messenger and Instagram <span class="tag">Soon</span></span></li>
+          <li class="soon-item"><svg class="icon"><use href="#i-check"/></svg><span>Cloud assistant <span class="tag">Soon</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-notes">
+      <div class="reveal"><svg class="icon"><use href="#i-gift"/></svg><div><b>One month free</b><span>On any plan. Cancel before it ends and you pay nothing.</span></div></div>
+      <div class="reveal"><svg class="icon"><use href="#i-users"/></svg><div><b>Your team joins free</b><span>Joining someone else's store never needs a plan.</span></div></div>
+      <div class="reveal"><svg class="icon"><use href="#i-lock"/></svg><div><b>Your data, always</b><span>Without a plan, your stores still open to view and export.</span></div></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:20px">Prices in Mexican pesos. Paid and cancelled through your App Store account.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="head center reveal" style="text-align:center">
+      <p class="kicker">FAQ</p>
+      <h2>What everyone asks.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do I need internet to use Helio?</summary><p>No. Helio sells, saves orders, prints and links your team without internet. You'll only need it for online features coming soon, like taking cards or sending documents to sign.</p></details>
+      <details><summary>Do I have to create an account?</summary><p>No. Open Helio, create your store and start selling. We don't ask for an email or password.</p></details>
+      <details><summary>Which devices does it run on?</summary><p>iPhone and iPad, and Macs with Apple silicon too. There's no Android version for now.</p></details>
+      <details><summary>My products are in Excel. Can I bring them over?</summary><p>Yes. Import products and customers from CSV files (what Excel or Google Sheets save) or SQLite. Helio includes ready-to-fill templates.</p></details>
+      <details><summary>Which printers can I use?</summary><p>AirPrint printers and Bluetooth thermal receipt printers (from the Float plan). You can also send the receipt as an image or PDF by WhatsApp or email.</p></details>
+      <details><summary>How many people can use my store?</summary><p>From Float you can invite your team with a QR code and give each person a role and permissions. Your staff don't pay: joining a store is free.</p></details>
+      <details><summary>What happens if I stop paying?</summary><p>Your stores still open so you can view and export everything in them. Only new sales pause until you're back on a plan. We never take your data away.</p></details>
+      <details><summary>Does Helio issue tax invoices (CFDI)?</summary><p>Not yet: Helio's receipts are not tax invoices. CFDI 4.0 invoicing from Helio is on its way.</p></details>
+      <details><summary>What if I lose my iPhone?</summary><p>Your store is a file you can back up wherever you like (iCloud Drive, your computer or a USB drive), and Helio keeps automatic versions so you can go back to an earlier copy.</p></details>
+      <details><summary>How do I cancel?</summary><p>In your iPhone's Settings › your name › Subscriptions › Helio. Cancel during the free month and you won't be charged.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="block" id="download" style="padding-top:0">
+  <div class="wrap">
+    <div class="final reveal">
+      <img class="hand" src="./assets/icon.png" alt="" width="120" height="120">
+      <h2>Your first month is on us.</h2>
+      <p>Download Helio, set up your store in minutes and make your first sale today. No contract and no account to create.</p>
+      <div class="ctas">
+        <a class="btn btn-yellow" href="mailto:support@harcode.com?subject=I%20want%20to%20try%20Helio" data-download data-live-label="Download on the App Store"><svg class="icon"><use href="#i-download"/></svg><span data-label>Coming soon to the App Store · Notify me</span></a>
+        <a class="btn btn-ghost" href="./support/">Questions? Write to us</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
-<footer>
-  <div class="bar">
-    <span>© 2026 Helio</span>
-    <span><a href="./privacy/">Privacy</a> <a href="./terms/">Terms</a> <a href="./support/">Support</a> <a href="./es/" hreflang="es" lang="es">Español</a></span>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Harcode · Helio</span>
+    <nav aria-label="Footer">
+      <a href="./privacy/">Privacy</a>
+      <a href="./terms/">Terms</a>
+      <a href="./support/">Support</a>
+      <a href="./es/" hreflang="es" lang="es">Español</a>
+    </nav>
   </div>
 </footer>
+
+<script src="./assets/landing.js"></script>
 </body>
 </html>
